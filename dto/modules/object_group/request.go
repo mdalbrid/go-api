@@ -38,7 +38,7 @@ func (dto *ListRequestDto) ToFilter() ws_object_group.FilterObject {
 		Limit:  dto.Limit,
 		Orders: OrderDtoToObject(dto.Orders),
 		Filter: ws_object_group.Filter{
-			explorationUUID: dto.Filter.explorationUUID,
+			ExplorationUUID: dto.Filter.ExplorationUUID,
 		},
 	}
 }
